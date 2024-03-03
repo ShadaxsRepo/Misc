@@ -4,7 +4,7 @@
  * @author Shadax
  * @authorId 652878644087357460
  * @description Autoscrolls to the most recent message when entering a channel.
- * @website https://github.com/Sh-ad-ax/Misc
+ * @website https://github.com/ShadaxsRepo/Misc
  * @source https://github.com/Inve1951/BetterDiscordStuff/blob/b7147cb0a2b5c694702438739c6ad9a581c6369c/plugins/scrollToLast.plugin.js
  */
 
