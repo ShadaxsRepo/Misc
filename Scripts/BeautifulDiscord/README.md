@@ -1,7 +1,7 @@
 1. BeautifulDiscord is created using Python. You can either download the already converted .exe program for simplicity, or if you wish to compile the script yourself, the you will need to download Python.
 At the end of the installation, there should be an option that says something along the lines of `Add to PATH`. If you don't check this, it'll make a future step slightly harder.
 
-2. Install [BeautifulDiscord](https://github.com/ShadaxsRepo/Scripts/BeautifulDiscord)
+2. Install [BeautifulDiscord](https://github.com/ShadaxsRepo/Scripts/BeautifulDiscord/master.zip)
 Open a command prompt/terminal, and enter `python -m pip install -U https://github.com/ShadaxsRepo/Scripts/BeautifulDiscord/master.zip`, this will download and install BeautifulDiscord.
 If you did not add Python to PATH, navigate to the directory of where Python is installed and run the command.
 If you get an error while installing that says something along the lines of `Microsoft Visual C++ 14.0 is required`, follow these steps.
