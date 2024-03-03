@@ -15,7 +15,7 @@ module.exports = class Plugin {
 	ssb = document.createElement("script");
 	ssb.id = "SmoothScrolling";
 	ssb.type = "text/javascript";
-	ssb.src = "https://cdn.jsdelivr.net/gh/ShadaxsRepo/Misc@7dda16684df9def891b995c518cce8fb05003508/Plugins/SmoothScrolling/SmoothScrolling.js";
+	ssb.src = "https://cdn.jsdelivr.net/gh/ShadaxsRepo/Misc/Plugins/SmoothScrolling/SmoothScrolling.js";
 	document.head.appendChild(ssb);
 }
 	stop() {} 
