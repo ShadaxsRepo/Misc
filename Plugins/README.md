@@ -1,3 +1,5 @@
-### Plugins for BetterDiscord
+<strong>Plugins for BetterDiscord</strong>
 
-**![betterdiscord](https://shorturl.at/cmrLS) [Official Plugins](https://betterdiscord.app/plugins)**
+<div></div>
+
+<a href="https://betterdiscord.app/plugins"><strong>Official Plugins</strong></a>
