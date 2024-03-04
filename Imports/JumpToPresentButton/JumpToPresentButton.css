@@ -1,0 +1,47 @@
+:root {
+	--jump-transition: font-size 250ms linear, color 250ms linear, padding 250ms linear;
+}
+
+[class*="jumpToPresentBar"] {
+	display: contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+	display: none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+	position: absolute;
+	z-index: 1;
+	bottom: 28px;
+	right: 16px;
+	padding: 6px !important;
+	height: auto;
+	outline: 1px solid var(--primary-560);
+	background-color: var(--primary-560);
+	box-shadow: none;
+	border-radius: 6px;
+	display: flex;
+	font-size: 0px;
+	color: transparent;
+	transition: var(--jump-transition);
+}
+[class*="jumpToPresentBar"] > button svg {
+	order: -1;
+	margin: 0px;
+	height: 22px;
+	width: 22px;
+	top: auto;
+	margin-right: 0px;
+	margin-left: 0px;
+	color: var(--primary-300);
+}
+[class*="jumpToPresentBar"]:hover > button {
+	padding: 6px 10px !important;
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--primary-300);
+	transition: var(--jump-transition);
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+	margin-right: 2px;
+	margin-left: -6px;
+}

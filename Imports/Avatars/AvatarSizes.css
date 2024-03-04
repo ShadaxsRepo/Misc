@@ -1,0 +1,47 @@
+:root {
+	--home-svg: 100%;
+	--Server-svgs: 100%;
+	--chat-window: 80%;
+	--autocomplete: 90%;
+	--inbox: 90%;
+	--members-list: 90%;
+	--pinned-messages: 80%;
+}
+
+/*------Keeps The Server Images Spaced Evenly------*/
+[class^="guildSeparator"] {
+	display: none !important;
+}
+[role="tree"] [class^="tutorialContainer"] [class^="listItem"]:has([aria-label="Direct Messages"]) {
+	margin-bottom: 4px !important;
+}
+/*-----------The Size Of The Home Image------------*/
+[aria-label="Servers sidebar"] [class^="tree"] [class^="tutorialContainer"] svg {
+	scale: var(--home-svg) !important;
+}
+/*----------The Size Of The Server Images----------*/
+[aria-label="Servers sidebar"] [data-list-id="guildsnav"] svg {
+	scale: var(--Server-svgs) !important;
+}
+/*---------Avatars In The Main Chat Window---------*/
+[data-list-id^="chat-messages"] [id^="chat-messages"] [class^="avatar"] {
+	scale: var(--chat-window) !important;
+}
+/*---------Avatars In The Autocomplete Box---------*/
+[class^="autocomplete"] [class^="rail"] svg,
+[class^="autocomplete"] [class^="base"]:has([class*="RowSubheading"]) svg {
+	scale: var(--autocomplete) !important;
+}
+/*------------Avatars Within Your Inbox------------*/
+[aria-label="Inbox"] [class^="avatar"],
+[aria-label="Inbox"] [class^="channelHeader"] [class^="icon"] {
+	scale: var(--inbox) !important;
+}
+/*-----------Avatars In The Members List-----------*/
+[aria-label="Members"] [class^="avatar"] svg {
+	scale: var(--members-list) !important;
+}
+/*-------Avatars In The Pinned Messages List-------*/
+[aria-label="Pinned Messages"] [class^="avatar"] {
+	scale: var(--pinned-messages) !important;
+}

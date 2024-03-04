@@ -1,0 +1,31 @@
+:root {
+/* -------- Emoji Filters --------- */
+	--emoji-saturation: 105%;
+	--emoji-rendering: high-quality;
+/* -------- Image Filters --------- */
+	--img-contrast: 105%;
+	--img-saturation: 110%;
+	--img-brightness: 105%;
+	--img-rendering: high-quality;
+/* ------- Sticker Filters -------- */
+	--sticker-contrast: 105%;
+	--sticker-saturation: 110%;
+	--sticker-brightness: 100%;
+	--sticker-rendering: high-quality;
+}
+
+/* -- Image Filters And Rendering -- */
+[aria-label="Image"] {
+	filter: contrast(var(--img-contrast)) saturate(var(--img-saturation)) brightness(var(--img-brightness)) !important;
+	image-rendering: var(--img-rendering) !important;
+}
+/* -- Emoji Filters And Rendering -- */
+[class*="emoji"] {
+	filter: saturate(var(--emoji-saturation)) drop-shadow(var(--drop-shadow)) !important;
+	image-rendering: var(--emoji-rendering) !important;
+}
+/* - Sticker Filters And Rendering - */
+[aria-label^="Sticker"] {
+	filter: contrast(var(--sticker-contrast)) saturate(var(--sticker-saturation)) brightness(var(--sticker-brightness)) !important;
+	image-rendering: var(--sticker-rendering) !important;
+}

@@ -1,0 +1,47 @@
+:root {
+/* Chat Message Width */
+	--custom-message-margin-horizontal: 10px !important; /* Margin On The Left Side Of Each Avatar | Default = 16px */
+	--custom-message-margin-left-content-cozy: 60px !important; /* Margin On The Left Side Of Each Message | Default = 72px */
+	--custom-message-spacing-vertical-container-cozy: 4px !important; /* Height Of Each Avatar | Default = 2px */
+}
+
+/* Reduces The Gap Above The Input Box Before The First Message */
+[class^="chatContent"] [class^="form"] {
+	margin-top: -20px !important; /* Default = -8px */
+}
+
+/* Fixes Spacing For The First Pinned Message */
+[aria-label="Pinned Messages"] [class^="messageGroupWrapper"]:first-child {
+    margin-top: -8px !important;
+}
+
+/* Makes The Gap Between Messages Slightly More Compact */
+[class^="chatContent"] [role="article"],
+[class^="chatContent"] [role="article"]:has([class^="codeContainer"]) {
+    padding-right: 24px !important; /* Default = 48px */
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+/* Reduces The Gap Caused By The Edited Text Back To Normal */
+[aria-roledescription="Message"]:has([aria-label^="Edited"]):not([aria-label="replying"]:has([aria-label^="Edited"])),
+[data-list-id="pins"] [class^="contents"]:has([src*="652878644087357460"],[src*="697199604705525760"],[src*="773029774032633906"]):has([aria-label^="Edited"]) {
+    margin-bottom: 0px !important; /* Was -22px */
+}
+[aria-label="Pinned Messages"] [class^="contents"]:has([class^="edited"]),
+[aria-label="Pinned Messages"] [class^="message"] span:not([class^="code"] span):first-of-type {
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+[aria-label^="Pinned"] [class^="contents"]:has([class^="edited"]),
+[aria-label^="Pinned"] [class*="message"] span:not([class^="code"] span):first-of-type {
+    margin-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Removes The Edited Text From Edited Messages */
+[aria-label^="Edited"] {
+    visibility: hidden !important;
+}

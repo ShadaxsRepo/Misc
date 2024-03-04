@@ -1,0 +1,14 @@
+/* ---- Hides All Of The Built In Commands ---- */
+[class*="autocomplete"] [aria-label="Built-in"],
+[class*="autocomplete"] [class^="base"]:has([d^="M5 2a3 3 0 0 0-3 3v14a3"]) {
+	display: none !important;
+}
+/* Removes The Frequently Used Icons Background */
+[class^="autocomplete"] [class^="rail"] [class*="select"] {
+	background: none !important;
+}
+/* ----- Changes The Frequently Used Icon ----- */
+[class^="autocomplete"] [aria-label="Frequently Used"] [role="img"] {
+	-webkit-mask: url(https://raw.githubusercontent.com/S-h-a-d-a-x/DiscordThemes/main/Imports/DiscordIcons/SVGs/frequentlyused.svg) center/contain no-repeat !important;
+	background: var(--interactive-normal) !important;
+}

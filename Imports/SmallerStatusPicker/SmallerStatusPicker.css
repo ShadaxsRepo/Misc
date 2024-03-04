@@ -1,0 +1,19 @@
+/*===== Smaller Status Picker =====*/
+
+[class^="accountProfilePopout"] {
+	visibility: hidden;
+}
+[class^="accountProfilePopout"] [class^="menu"] {
+	visibility: visible;
+	background-color: var(--profile-body-background-color);
+}
+[class^="accountProfilePopout"],
+[class^="accountProfilePopout"] [class^="userPopoutOverlay"] {
+	left: 0;
+	margin: 0;
+}
+[class^="accountProfilePopout"] [class^="menu"],
+[class^="accountProfilePopout"] [class^="submenu"] {
+	border-radius: 6px;
+	width: 224px;
+}

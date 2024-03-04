@@ -1,0 +1,55 @@
+:root {
+	--Voice-Call: none;
+	--Video-Call: none;
+	--Add-Friends-to-DM: none;
+	--New-Group-DM: none;
+	--Show-Profile: none;
+	--Hide-Profile: none;
+	--Threads: none;
+	--Notifications: block;
+	--Pins: block;
+	--Show-Members: block;
+	--Hide-Members: block;
+	--Inbox: block;
+	--Help: none;
+}
+
+[class^="toolbar"] [aria-label*="Voice"] {
+	display: var(--Voice-Call) !important;
+}
+[class^="toolbar"] [aria-label*="Video"] {
+	display: var(--Video-Call) !important;
+}
+[class^="toolbar"] [aria-label^="Add Friends"] {
+	display: var(--Add-Friends-to-DM) !important;
+}
+[class^="toolbar"] [aria-label$="Group DM"] {
+	display: var(--New-Group-DM) !important;
+}
+[class^="toolbar"] [aria-label^="Show User"] {
+	display: var(--Show-Profile) !important;
+}
+[class^="toolbar"] [aria-label^="Hide User"] {
+	display: var(--Hide-Profile) !important;
+}
+[class^="toolbar"] [aria-label="Threads"] {
+	display: var(--Threads) !important;
+}
+[class^="toolbar"] [aria-label^="Notification"] {
+	display: var(--Notifications) !important;
+}
+[class^="toolbar"] [aria-label^="Pinned"] {
+	display: var(--Pins) !important;
+}
+[class^="toolbar"] [aria-label^="Show Member"] {
+	display: var(--Show-Members) !important;
+}
+[class^="toolbar"] [aria-label^="Hide Member"] {
+	display: var(--Hide-Members) !important;
+}
+[class^="toolbar"] [aria-label="Inbox"] {
+	display: var(--Inbox) !important;
+}
+[class^="toolbar"] [aria-label="Help"] {
+	display: var(--Help) !important;
+}

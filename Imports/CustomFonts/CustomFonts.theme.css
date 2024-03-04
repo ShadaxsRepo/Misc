@@ -1,0 +1,23 @@
+/**
+ * @name CustomFonts
+ * @version 1.0
+ * @author Shadax
+ * @authorId 652878644087357460
+ * @description Changes Discords Default Font.
+ * @source https://github.com/S-h-a-d-a-x/DiscordThemes/tree/main/Imports/CustomFonts
+ * @website https://raw.githubusercontent.com/S-h-a-d-a-x/DiscordThemes/main/Imports/CustomFonts/FontList.txt
+*/
+
+@import url("https://s-h-a-d-a-x.github.io/DiscordThemes/Imports/CustomFonts/CustomFonts.css");
+
+/* List Of All Different Fonts */
+/*  https://shorturl.at/ELOY0  */
+
+/* Default Line Height = 1.375rem */
+
+:root {
+	--font-primary: 'Google Sans', sans-serif !important;
+	--font-size: 100% !important;
+	--letter-spacing: 0em !important;
+	--line-height: 1.375rem !important;
+}

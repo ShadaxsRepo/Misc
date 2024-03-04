@@ -1,0 +1,37 @@
+@import url("https://github.com/ShadaxsRepo/Misc/Imports/CustomFonts/Fonts/FontVariables/FontVariables.css");
+
+body * {
+	font-family: var(--font-primary) !important;
+	font-style: normal !important;
+	text-rendering: optimizeSpeed !important;
+}
+
+html {
+	font-size: var(--font-size) !important;
+}
+
+/* Prevents Changing The Font On The Popout CSS Editor */
+.monaco-editor *, .hljs, .inline, .hljs :-webkit-any(ol, li, span),
+.monaco-editor .editor-wrapper :-webkit-any(textarea, div, span) {
+	font-family: var(--font-code) !important;
+}
+.codeLine-2C-9aH, .codeBlockText-28BOxV,
+.markup-eYLPri .codeContainer-2LCL7Y, .inlineCode-ERyvy_,
+.after_inlineCode-2_JXPm, .before_inlineCode-1zngJj {
+	font-family: var(--font-code) !important;
+	font-size: var(--font-size) !important;
+}
+.codicon[class*=codicon-] {
+	font-family: codicon !important;
+}
+
+/* Font When Right Clicking In The Editor */
+span.action-label, textarea.input, .matchesCount, a.action-menu-item {
+	font-family: var(--font-primary) !important;
+	font-weight: inherit !important;
+}
+
+/* Tidys Up The Right Click List */
+.action-item.disabled {
+	display: none !important;
+}

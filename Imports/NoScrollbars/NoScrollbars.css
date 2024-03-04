@@ -1,0 +1,21 @@
+/* Color Of The Thumb In Chat */
+[class*="chat"] ::-webkit-scrollbar-thumb {
+	visibility: visible !important;
+	background-color: var(--primary-730);
+}
+/* Hides The Scrollbar From All Pages Except Chat */
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb,
+[class*="scroller"]::-webkit-scrollbar-track,
+[aria-label="Search Results"] ::-webkit-scrollbar-thumb,
+[aria-label="Search Results"] ::-webkit-scrollbar-track {
+	visibility: hidden !important;
+}
+/* Removes The Scrollbar From Within The Message Box */
+[class^="channelTextArea"] ::-webkit-scrollbar {
+	display: none !important;
+}
+/* Repositions The Emoji Icon */
+[aria-label="Select emoji"] {
+	padding: 10px 16px !important;
+}

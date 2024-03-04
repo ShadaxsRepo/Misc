@@ -1,0 +1,42 @@
+:root {
+	--bso-img: url(https://shorturl.at/erswO) !important;
+	--osb-img: url(https://shorturl.at/cnoI5) !important;
+	--avatar-radius: 25%;
+	--avatar-radius-hovered: 10%;
+	--img-position: center;
+	--img-size: 24px;
+}
+
+#app-mount foreignObject[mask*="url(#"]:not([mask="url(#svg-mask-status-online)"], [mask="url(#svg-mask-status-idle)"],
+[mask="url(#svg-mask-status-dnd)"], [mask="url(#svg-mask-status-offline)"]), .avatar-2e8lTP, .replyAvatar-sHd2sU,
+.avatarHintInner-2HUAWj, .icon-28xrhD, .guildIcon-EvT-p6, .guildIcon-2SUGiq {
+	mask: none;
+	border-radius: var(--avatar-radius) !important;
+	transition-duration: 250ms;
+}
+#app-mount foreignObject[mask*="url(#"]:hover, .avatar-2e8lTP:hover, .replyAvatar-sHd2sU:hover,
+.avatarHintInner-2HUAWj:hover, .icon-28xrhD:hover, .guildIcon-EvT-p6:hover, .guildIcon-2SUGiq:hover {
+	border-radius: var(--avatar-radius-hovered) !important;
+	transition-duration: 250ms;
+}
+[aria-label^="𝗕𝗦𝗢"] [class^="scrollableContainer"] [aria-label^="Frequently"] {
+	background: var(--bso-img) var(--img-position)/var(--img-size) no-repeat !important;
+	border-radius: var(--avatar-radius);
+	transition-duration: 250ms;
+}
+[aria-label^="𝗕𝗦𝗢"] [class^="scrollableContainer"] [aria-label^="Frequently"]:hover {
+	border-radius: var(--avatar-radius-hovered) !important;
+	transition-duration: 250ms;
+}
+[aria-label^="𝗢𝗦𝗕"] [class^="scrollableContainer"] [aria-label^="Frequently"] {
+	background: var(--osb-img) var(--img-position)/var(--img-size) no-repeat !important;
+	border-radius: var(--avatar-radius);
+	transition-duration: 250ms;
+}
+[aria-label^="𝗢𝗦𝗕"] [class^="scrollableContainer"] [aria-label^="Frequently"]:hover {
+	border-radius: var(--avatar-radius-hovered) !important;
+	transition-duration: 250ms;
+}
+[class^="scrollableContainer"] [aria-label^="Frequently"] [d^="M9.99999"] {
+	display: none;
+}

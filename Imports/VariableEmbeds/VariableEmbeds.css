@@ -1,0 +1,53 @@
+:root {
+	--Chat-Emoji-Size: 22px;       /* Default =  22px */
+	--Chat-Emoji-Large-Size: 48px; /* Default =  48px */
+	--Chat-Sticker-Size: 80px;     /* Default = 160px */
+	--Chat-GIF-Size: 250px;
+	--Chat-Image-Size: 550px;
+	--Chat-Video-Size: 350px;
+}
+
+/* Emojis In Chat */
+[class="emoji"]:not([class^="replied"] .emoji) {
+	width: var(--Chat-Emoji-Size) !important;
+	height: var(--Chat-Emoji-Size) !important;
+}
+[class="emoji jumboable"] {
+	width: var(--Chat-Emoji-Large-Size) !important;
+	height: var(--Chat-Emoji-Large-Size) !important;
+}
+/* Stickers In Chat */
+[data-type="sticker"] {
+	max-width: var(--Chat-Sticker-Size) !important;
+	max-height: var(--Chat-Sticker-Size) !important;
+}
+[role="article"]>[class^="container"]:has([data-type="sticker"]) {
+	max-width: var(--Chat-Sticker-Size) !important;
+	max-height: var(--Chat-Sticker-Size) !important;
+}
+/* GIFs In Chat */
+[aria-label="GIF"] {
+	max-width: var(--Chat-GIF-Size) !important;
+	max-height: var(--Chat-GIF-Size) !important;
+}
+[role="article"]>[class^="container"]:has([aria-label="GIF"]) {
+	max-width: var(--Chat-GIF-Size) !important;
+	max-height: var(--Chat-GIF-Size) !important;
+}
+/* Images In Chat */
+[aria-label="Image"] {
+	max-width: var(--Chat-Image-Size) !important;
+	max-height: var(--Chat-Image-Size) !important;
+}
+[role="article"]>[class^="container"]:has([aria-label="Image"]) {
+	max-width: var(--Chat-Image-Size) !important;
+	max-height: var(--Chat-Image-Size) !important;
+}
+/* Videos In Chat */
+[role="article"]>[class^="container"]:has([class*="VideoImage"],[class*="embedIframe"]) {
+	max-width: var(--Chat-Video-Size) !important;
+	min-height: var(--Chat-Video-Size) !important;
+}
+[role="article"]>[class^="container"]:has([class^="embedVideo"]) [aria-haspopup="listbox"] {
+	min-width: var(--Chat-Video-Size) !important;
+}
