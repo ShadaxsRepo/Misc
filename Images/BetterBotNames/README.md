@@ -1,0 +1,1 @@
+<strong>Contains The Images In Their Base64 Format.</strong>
