@@ -9,6 +9,6 @@
 }
 /* ----- Changes The Frequently Used Icon ----- */
 [class^="autocomplete"] [aria-label="Frequently Used"] [role="img"] {
-	-webkit-mask: url(https://raw.githubusercontent.com/S-h-a-d-a-x/DiscordThemes/main/Imports/DiscordIcons/SVGs/frequentlyused.svg) center/contain no-repeat !important;
+	-webkit-mask: url(https://raw.githubusercontent.com/ShadaxsRepo/Misc/main/Images/DiscordIcons/SVGs/frequentlyused.svg) center/contain no-repeat !important;
 	background: var(--interactive-normal) !important;
 }
