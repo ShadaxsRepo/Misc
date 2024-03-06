@@ -1,5 +1,5 @@
 /* Monaco Editor Window Min And Max Size */
-#floating-editor-window.floating-window.undefined.resizable {
+[id^="bd-floating"] {
 	min-width: 200px !important;
 	min-height: 80px !important;
 	max-width: 1520px !important;
