@@ -4,19 +4,19 @@
  * @author Shadax
  * @authorId 652878644087357460
  * @description Changes Discords Default Font.
- * @source https://github.com/S-h-a-d-a-x/DiscordThemes/tree/main/Imports/CustomFonts
- * @website https://raw.githubusercontent.com/S-h-a-d-a-x/DiscordThemes/main/Imports/CustomFonts/FontList.txt
+ * @website https://github.com/ShadaxsRepo/Misc
+ * @source https://raw.githubusercontent.com/ShadaxsRepo/Misc/main/Imports/CustomFonts/Main/FontList.txt
 */
 
-@import url("https://s-h-a-d-a-x.github.io/DiscordThemes/Imports/CustomFonts/CustomFonts.css");
+/*                                  List Of All Different Fonts                                  */
+/* https://raw.githubusercontent.com/ShadaxsRepo/Misc/main/Imports/CustomFonts/Main/FontList.txt */
 
-/* List Of All Different Fonts */
-/*  https://shorturl.at/ELOY0  */
+@import url("https://cdn.jsdelivr.net/gh/ShadaxsRepo/Misc@main/Imports/CustomFonts/Main/AllFonts.css");
 
 /* Default Line Height = 1.375rem */
 
 :root {
-	--font-primary: 'Google Sans', sans-serif !important;
+	--font-primary: 'Open Sans', sans-serif !important;
 	--font-size: 100% !important;
 	--letter-spacing: 0em !important;
 	--line-height: 1.375rem !important;
