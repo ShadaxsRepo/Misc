@@ -1,4 +1,4 @@
-@import url("https://github.com/ShadaxsRepo/Misc/Imports/CustomFonts/Fonts/FontVariables/FontVariables.css");
+@import url("https://cdn.jsdelivr.net/gh/ShadaxsRepo/Misc@main/Imports/CustomFonts/Main/AllFonts.css");
 
 body * {
 	font-family: var(--font-primary) !important;
