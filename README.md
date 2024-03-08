@@ -1,4 +1,4 @@
-<img src="https://betterdiscord.app/resources/branding/logo_large.svg" alt="BDBanner" width="256px" height="128px"/>
+<img src="https://github.com/ShadaxsRepo/Misc/blob/main/Images/Other/BDBanner.png" alt="BDBanner" width="312px" height="96px"/>
 
 <h1><h4><img src="https://betterdiscord.app/resources/branding/logo_small.svg" alt="BD-logo" width="18px" height="18px"/> <a href="https://betterdiscord.app"><strong>BetterDiscord</strong></a></h4></h1>
 
